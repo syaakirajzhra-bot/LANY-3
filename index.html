@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LANY</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+html { scroll-behavior: smooth; }
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background: linear-gradient(to bottom, #020617, #0a192f, #112240, #0f3057);
+  color:white;
+}
+
+/* ===== COVER ===== */
+.cover{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  position:relative;
+}
+
+.cover::after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(2,6,23,0.85);
+}
+
+.cover-content{
+  position:relative;
+  z-index:2;
+}
+
+.cover-img{
+  width:220px;
+  border-radius:20px;
+  margin-bottom:25px;
+  box-shadow:0 0 30px rgba(59,130,246,0.8);
+  animation:floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+  0%{transform:translateY(0px);}
+  50%{transform:translateY(-12px);}
+  100%{transform:translateY(0px);}
+}
+
+.cover h1{
+  font-size:50px;
+  letter-spacing:8px;
+  color:#93c5fd;
+  text-shadow:0 0 15px #3b82f6, 0 0 40px #1d4ed8;
+}
+
+.cover p{
+  margin-top:15px;
+  color:#cbd5e1;
+  letter-spacing:2px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:12px 30px;
+  background:#1e3a8a;
+  border-radius:30px;
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#2563eb;
+  transform:scale(1.08);
+}
+
+/* ===== SECTION ===== */
+section{
+  padding:80px 25px;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:30px;
+  color:#93c5fd;
+  letter-spacing:3px;
+}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:25px;
+  border-radius:20px;
+  margin-bottom:30px;
+  border:1px solid rgba(147,197,253,0.2);
+}
+
+.card h3{
+  margin-bottom:12px;
+  color:#bfdbfe;
+}
+
+.card p{
+  line-height:1.8;
+  color:#e2e8f0;
+  font-size:15px;
+}
+
+ul{
+  margin-top:10px;
+  margin-left:20px;
+  line-height:1.8;
+  color:#e2e8f0;
+}
+
+footer{
+  text-align:center;
+  padding:25px;
+  background:#020617;
+  color:#94a3b8;
+  letter-spacing:2px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="cover">
+  <div class="cover-content">
+    <img src="lany.jpg" class="cover-img">
+    <h1>LANY</h1>
+    <p>Soundtrack of late nights & untold feelings</p>
+    <a href="#materi" class="btn">Explore</a>
+  </div>
+</div>
+
+<section id="materi">
+  <div class="container">
+
+    <h2>ABOUT LANY</h2>
+
+    <div class="card">
+      <h3>🎶 Apa Itu LANY?</h3>
+      <p>
+        LANY adalah band pop asal Los Angeles yang dibentuk pada tahun 2014.
+        Nama LANY merupakan singkatan dari "Los Angeles New York".
+        Mereka dikenal dengan gaya synth-pop yang dreamy dan emosional.
+      </p>
+      <p>
+        Musik LANY sering menjadi teman di malam hari,
+        saat perasaan terasa lebih dalam dan sulit diungkapkan dengan kata-kata.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🎧 Lagu-Lagu Populer LANY</h3>
+      <ul>
+        <li>ILYSB</li>
+        <li>Malibu Nights</li>
+        <li>Pink Skies</li>
+        <li>Super Far</li>
+        <li>I Don’t Wanna Love You Anymore</li>
+        <li>Thick and Thin</li>
+        <li>Soft</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>💙 Alasan Menyukai LANY</h3>
+      <p>
+        Banyak orang menyukai LANY karena musiknya terasa personal dan relatable.
+        Liriknya seperti diary yang dinyanyikan.
+        Tentang cinta, kehilangan, dan kenangan yang masih tersisa.
+      </p>
+      <p>
+        Vibe musiknya estetik, tenang, dan emosional —
+        membuat pendengarnya merasa dimengerti.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🎵 Lagu “Soft” — Merepresentasikan Seseorang</h3>
+      <p>
+        Lagu “Soft” memiliki suasana lembut namun penuh makna.
+        Lagu ini merepresentasikan seseorang yang terlihat kuat di luar,
+        tetapi sebenarnya memiliki sisi rapuh yang jarang diperlihatkan.
+      </p>
+      <p>
+        “Soft” menggambarkan seseorang yang mencintai dengan tulus,
+        yang tetap lembut meskipun dunia terasa keras.
+        Lagu ini seperti pengingat bahwa menjadi lembut
+        bukanlah kelemahan, melainkan keberanian untuk tetap merasakan.
+      </p>
+
+      <br>
+
+      <!-- SPOTIFY EMBED -->
+      <iframe style="border-radius:12px" 
+      src="https://open.spotify.com/embed/track/5nTtCOCds6I0PHMNtqelas" 
+      width="100%" height="152" frameBorder="0" 
+      allowfullscreen="" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+      </iframe>
+
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  Syaakira Zahra 11.12
+</footer>
+
+</body>
+</html>
